@@ -112,6 +112,7 @@ nav i.fa-bars {
 }
 
 .join-button {
+    display: inline-block;
     background-color: #E6533C;
     color: white;
     padding: 16px 40px;
@@ -123,6 +124,7 @@ nav i.fa-bars {
 }
 
 .download-button {
+    display: inline-block;
     color: white;
     border: 1px solid white;
     padding: 16px 40px;
@@ -258,6 +260,55 @@ nav i.fa-bars {
     letter-spacing: 0.3px;
 }
 
+.run {
+    max-width: 1060px;
+    width: 90%;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 150px;
+    padding: 30px;
+    border-radius: 18px;
+    background: #222;
+}
+
+.run-text h1 {
+    color: white;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 120%;
+    margin-bottom: 14px;
+}
+
+.run-text p {
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    margin-bottom: 34px;
+}
+
+.run-text a {
+    display: inline-block;
+    background-color: #E6533C;
+    color: white;
+    padding: 16px 40px;
+    border-radius: 42px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.run-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 65%;
+    border-radius: 18px;
+}
+
 @media screen and (max-width: 992px) {
     .banner {
         gap: 100px;
@@ -280,6 +331,14 @@ nav i.fa-bars {
 
     .change-your-habits-cards {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .run {
+        gap: 70px;
+    }
+
+    .run-text h1 {
+        font-size: 36px;
     }
 }
 
@@ -347,7 +406,20 @@ nav i.fa-bars {
         font-size: 12.096px;
     }
 
+    .change-your-habits-text h1 {
+        font-size: 32px;
+    }
+
     .change-your-habits-cards {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .run {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    .run-text h1 {
+        font-size: 32px;
     }
 }
