@@ -18,7 +18,7 @@ body {
 }
 
 header {
-    background: linear-gradient(180deg, #111 0%, rgba(119, 119, 119, 0.00) 100%);
+    background: linear-gradient(180deg, #111 0%, rgba(119, 119, 119, 0) 100%);
 }
 
 nav {
@@ -33,12 +33,11 @@ nav {
 }
 
 nav h1 {
-    color: #E6533C;
+    color: #e6533c;
     font-size: 36px;
     font-weight: 800;
     font-style: italic;
 }
-
 
 nav ul {
     display: flex;
@@ -61,7 +60,7 @@ nav i.fa-bars {
 }
 
 .current-page {
-    background-color: #E6533C;
+    background-color: #e6533c;
     padding: 8px 20px;
     border-radius: 46px;
 }
@@ -98,7 +97,7 @@ nav i.fa-bars {
 }
 
 .banner-text p {
-    color: rgba(255, 255, 255, 0.50);
+    color: rgba(255, 255, 255, 0.5);
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -113,7 +112,7 @@ nav i.fa-bars {
 
 .join-button {
     display: inline-block;
-    background-color: #E6533C;
+    background-color: #e6533c;
     color: white;
     padding: 16px 40px;
     border-radius: 42px;
@@ -149,8 +148,8 @@ nav i.fa-bars {
 }
 
 .workout-videos-number {
-    background: rgba(255, 255, 255, 0.10);
-    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
@@ -161,7 +160,7 @@ nav i.fa-bars {
 }
 
 .workout-videos-number h2 {
-    color: #FFF;
+    color: #fff;
     font-size: 40px;
     font-weight: 900;
     margin-bottom: 5px;
@@ -178,7 +177,7 @@ nav i.fa-bars {
     display: flex;
     align-items: center;
     border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.10);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     background: rgba(48, 48, 48, 0.54);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
@@ -194,7 +193,7 @@ nav i.fa-bars {
 }
 
 .tutorial-videos-number h2 {
-    color: #FAFAF9;
+    color: #fafaf9;
     font-size: 24px;
     font-weight: 900;
 }
@@ -226,7 +225,7 @@ nav i.fa-bars {
 }
 
 .change-your-habits-text p {
-    color: rgba(255, 255, 255, 0.50);
+    color: rgba(255, 255, 255, 0.5);
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
@@ -253,7 +252,7 @@ nav i.fa-bars {
 }
 
 .change-your-habit-card p {
-    color: rgba(255, 255, 255, 0.50);
+    color: rgba(255, 255, 255, 0.5);
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
@@ -263,7 +262,7 @@ nav i.fa-bars {
 .run {
     max-width: 1060px;
     width: 90%;
-    margin: 100px auto;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 150px;
@@ -281,7 +280,7 @@ nav i.fa-bars {
 }
 
 .run-text p {
-    color: rgba(255, 255, 255, 0.50);
+    color: rgba(255, 255, 255, 0.5);
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
@@ -291,7 +290,7 @@ nav i.fa-bars {
 
 .run-text a {
     display: inline-block;
-    background-color: #E6533C;
+    background-color: #e6533c;
     color: white;
     padding: 16px 40px;
     border-radius: 42px;
@@ -307,6 +306,94 @@ nav i.fa-bars {
     object-fit: cover;
     object-position: 65%;
     border-radius: 18px;
+}
+
+.trainings-and-exercises {
+    max-width: 1060px;
+    width: 90%;
+    margin: 100px auto 0;
+}
+
+.trainings-and-exercises-text {
+    max-width: 670px;
+    margin-bottom: 58px;
+}
+
+.trainings-and-exercises-text h1 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 14px;
+}
+
+.trainings-and-exercises-text p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+}
+
+.trainings-and-exercises-images-1-2-3 {
+    display: grid;
+    grid-template-columns: 0.75fr 1.5fr 0.75fr;
+    grid-template-rows: 200px;
+}
+
+.trainings-and-exercises-images-4-5-6 {
+    display: grid;
+    grid-template-columns: 1.25fr 0.75fr 1fr;
+    grid-template-rows: 200px;
+}
+
+.te-image {
+    position: relative;
+}
+
+.te-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.te-fg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 20px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.te-fg p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.te-fg1 {
+    background-color: #06ffd280;
+}
+
+.te-fg2 {
+    background-color: #ff00004d;
+}
+
+.te-fg3 {
+    background-color: #00000080;
+}
+
+.te-fg4 {
+    background-color: #00000080;
+}
+
+.te-fg5 {
+    background-color: #42ff004d;
+}
+
+.te-fg6 {
+    background-color: #0047ff4d;
 }
 
 @media screen and (max-width: 992px) {
@@ -329,6 +416,10 @@ nav i.fa-bars {
         left: 18%;
     }
 
+    .change-your-habits {
+        margin: 84px auto;
+    }
+
     .change-your-habits-cards {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -339,6 +430,10 @@ nav i.fa-bars {
 
     .run-text h1 {
         font-size: 36px;
+    }
+
+    .trainings-and-exercises {
+        margin: 72px auto 0;
     }
 }
 
@@ -406,6 +501,10 @@ nav i.fa-bars {
         font-size: 12.096px;
     }
 
+    .change-your-habits {
+        margin: 66px auto;
+    }
+
     .change-your-habits-text h1 {
         font-size: 32px;
     }
@@ -421,5 +520,31 @@ nav i.fa-bars {
 
     .run-text h1 {
         font-size: 32px;
+    }
+
+    .trainings-and-exercises {
+        margin: 66px auto 0;
+    }
+
+    .trainings-and-exercises-text {
+        margin-bottom: 37px;
+    }
+
+    .trainings-and-exercises-text h1 {
+        font-size: 32px;
+    }
+
+    .trainings-and-exercises-images-1-2-3 {
+        grid-template-columns: 0.8fr 1.2fr;
+        grid-template-rows: 140px;
+    }
+
+    .trainings-and-exercises-images-4-5-6 {
+        grid-template-columns: 1.2fr 0.8fr;
+        grid-template-rows: 140px;
+    }
+
+    .te-image:last-child {
+        display: none;
     }
 }
