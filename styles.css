@@ -204,6 +204,60 @@ nav i.fa-bars {
     white-space: nowrap;
 }
 
+.change-your-habits {
+    max-width: 1060px;
+    width: 90%;
+    margin: 100px auto;
+}
+
+.change-your-habits-text {
+    text-align: center;
+    margin: 0px auto 58px;
+    max-width: 660px;
+}
+
+.change-your-habits-text h1 {
+    color: white;
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 14px;
+}
+
+.change-your-habits-text p {
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+}
+
+.change-your-habits-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    text-align: center;
+}
+
+.change-your-habit-card img {
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.change-your-habit-card h4 {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.change-your-habit-card p {
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.3px;
+}
+
 @media screen and (max-width: 992px) {
     .banner {
         gap: 100px;
@@ -222,6 +276,10 @@ nav i.fa-bars {
     .tutorial-videos-number {
         top: 60%;
         left: 18%;
+    }
+
+    .change-your-habits-cards {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -253,7 +311,7 @@ nav i.fa-bars {
     .join-button {
         padding: 16px 30px;
     }
-    
+
     .download-button {
         padding: 16px 30px;
     }
@@ -287,5 +345,9 @@ nav i.fa-bars {
 
     .tutorial-videos-number p {
         font-size: 12.096px;
+    }
+
+    .change-your-habits-cards {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
