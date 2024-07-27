@@ -286,6 +286,7 @@ nav i.fa-bars {
   line-height: 24px;
   letter-spacing: 0.3px;
   margin-bottom: 34px;
+  text-align: justify;
 }
 
 .run-text a {
