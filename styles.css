@@ -554,6 +554,83 @@ option {
   border: none;
 }
 
+.team {
+  max-width: 1060px;
+  width: 90%;
+  margin: 88px auto;
+}
+
+.team-text {
+  margin: 0 auto 58px;
+  max-width: 671px;
+  text-align: center;
+}
+
+.team-text h1 {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 120%;
+  margin-bottom: 14px;
+}
+
+.team-text p {
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+}
+
+.team-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 272px 272px;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.team-member {
+  position: relative;
+}
+.team-member img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 18px;
+}
+.team-member-info {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.team-member div h3 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 120%;
+}
+
+.team-member p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 120%;
+}
+
 @media screen and (max-width: 992px) {
   .banner {
     gap: 100px;
@@ -608,6 +685,14 @@ option {
 
   .bmi-calculator-chart {
     margin-bottom: 62px;
+  }
+
+  .team {
+    margin: 72px auto;
+  }
+
+  .team-text {
+    margin: 0 auto 46px;
   }
 }
 
@@ -730,8 +815,48 @@ option {
     margin: 0 auto 32px;
   }
 
+  .bmi-calculator-text h1 {
+    font-size: 32px;
+  }
+
   .bmi-calculator-chart h2,
   .calculate-bmi h2 {
     font-size: 16px;
+  }
+
+  .team {
+    margin: 66px auto;
+  }
+
+  .team-text {
+    margin: 0 auto 32px;
+  }
+
+  .team-text h1 {
+    font-size: 32px;
+  }
+
+  .team-cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 272px 272px 272px 272px;
+  }
+
+  .team-cards > :nth-child(2) {
+    order: 1;
+  }
+  .team-cards > :nth-child(3) {
+    order: 3;
+  }
+  .team-cards > :nth-child(5) {
+    order: 2;
+  }
+  .team-cards > :nth-child(6) {
+    order: 4;
+  }
+
+  .team-cards > :nth-child(1),
+  .team-cards > :nth-child(4) {
+    display: none;
   }
 }
