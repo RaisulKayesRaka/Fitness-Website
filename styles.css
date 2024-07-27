@@ -632,6 +632,106 @@ option {
   line-height: 120%;
 }
 
+.pricing {
+  max-width: 1060px;
+  width: 90%;
+  margin: 88px auto;
+}
+
+.pricing-text {
+  margin: 0 auto 40px;
+  max-width: 671px;
+  text-align: center;
+}
+
+.pricing-text h1 {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 120%;
+  margin-bottom: 14px;
+}
+
+.pricing-text p {
+  max-width: 671px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+}
+
+.pricing-cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.pricing-card {
+  background-color: #222;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 18px;
+  padding: 30px;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+}
+
+.pricing-card h2 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 120%;
+  margin-bottom: 10px;
+}
+
+.pricing-card p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+
+.plan-details {
+  list-style: circle;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.plan-details li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.select-plan {
+  display: inline-block;
+  background-color: #e6533c;
+  color: white;
+  padding: 16px 40px;
+  border-radius: 42px;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 0.3s ease;
+}
+
+.select-plan:hover {
+  background-color: #c04634;
+}
+
+.premium {
+  border: 2px solid gold;
+}
+
+.premium li::marker {
+  color: gold;
+}
+
 footer {
   background: rgba(255, 255, 255, 0.1);
 }
@@ -780,6 +880,10 @@ hr {
 
   .team-text {
     margin: 0 auto 46px;
+  }
+
+  .pricing {
+    margin: 72px auto;
   }
 
   .footer-content {
@@ -950,6 +1054,18 @@ hr {
   .team-cards > :nth-child(1),
   .team-cards > :nth-child(4) {
     display: none;
+  }
+
+  .pricing {
+    margin: 66px auto;
+  }
+
+  .pricing-text h1 {
+    font-size: 32px;
+  }
+
+  .pricing-cards {
+    flex-direction: column;
   }
 
   .footer-content {
