@@ -727,14 +727,17 @@ option {
 }
 
 .plan-details {
-  list-style: circle;
-  padding-left: 20px;
+  list-style: none;
   margin-bottom: 20px;
 }
 
 .plan-details li {
   margin-bottom: 10px;
   font-size: 16px;
+}
+
+.plan-details li i{
+  margin-right: 10px;
 }
 
 .select-plan {
@@ -758,7 +761,7 @@ option {
   border: 2px solid gold;
 }
 
-.premium li::marker {
+.premium i {
   color: gold;
 }
 
