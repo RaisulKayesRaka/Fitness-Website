@@ -157,6 +157,14 @@ nav i.fa-bars {
   position: absolute;
   top: 20%;
   right: -10%;
+
+  transform: scale(1);
+  opacity: 1;
+  animation: animate 3s ease-in-out infinite;
+}
+
+.workout-videos-number:hover {
+  animation-play-state: paused;
 }
 
 .workout-videos-number h2 {
@@ -186,6 +194,28 @@ nav i.fa-bars {
   position: absolute;
   top: 75%;
   left: 10%;
+
+  transform: scale(1);
+  opacity: 1;
+  animation: animate 3s ease-in-out infinite;
+}
+
+.tutorial-videos-number:hover {
+  animation-play-state: paused;
+}
+
+@keyframes animate {
+  0%,
+  10%,
+  90%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
 }
 
 .tutorial-videos-number img {
