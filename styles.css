@@ -125,7 +125,7 @@ nav i.fa-bars {
 .download-button {
   display: inline-block;
   color: white;
-  border: 1px solid white;
+  border: 2px solid white;
   padding: 16px 40px;
   border-radius: 42px;
   font-size: 18px;
@@ -736,7 +736,7 @@ option {
   font-size: 16px;
 }
 
-.plan-details li i{
+.plan-details li i {
   margin-right: 10px;
 }
 
@@ -814,14 +814,15 @@ footer {
   font-size: 32px;
   font-weight: 700;
   line-height: 120%;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 .footer-center li,
 .footer-right li {
   color: rgba(255, 255, 255, 0.5);
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 .footer-right {
@@ -845,7 +846,7 @@ hr {
 }
 .copyright p {
   color: rgba(255, 255, 255, 0.5);
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.3px;
@@ -905,6 +906,10 @@ hr {
 
   .bmi-calculator-chart {
     margin-bottom: 62px;
+  }
+
+  .bmi-calculator-chart h2 {
+    margin-bottom: 46px;
   }
 
   .team {
@@ -1053,6 +1058,10 @@ hr {
     font-size: 16px;
   }
 
+  .bmi-calculator-chart h2 {
+    margin-bottom: 23px;
+  }
+
   .team {
     margin: 66px auto;
   }
@@ -1103,6 +1112,6 @@ hr {
 
   .footer-content {
     grid-template-areas: "footer-left" "footer-center" "footer-right";
-    gap: 20px;
+    gap: 40px;
   }
 }
